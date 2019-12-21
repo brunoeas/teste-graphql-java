@@ -1,0 +1,16 @@
+type Livro {
+  idLivro: Int!
+  nmLivro: String!
+  dsLivro: String
+}
+
+input LivroInput {
+  idLivro: Int!
+  nmLivro: String!
+  dsLivro: String
+}
+
+type Query {
+  findAllLivros: [Livro!]!
+}
+
